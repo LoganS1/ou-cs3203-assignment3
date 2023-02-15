@@ -12,3 +12,24 @@ def getProductOfList(list):
         else:
             product *= item
     return product
+
+def getListFromUser():
+    userList = []
+    print("Please supply a list of integers. Type 'stop' to stop:\n")
+    userInput = input("Next integer ('stop' to stop): ")
+    while(userInput != "stop"):
+        userList.append(int(userInput))
+        userInput = input("Next integer: ")
+    return userList
+
+def main():
+    userList = getListFromUser()
+    userListSum = getSumOfList(userList)
+    userListProduct = getProductOfList(userList)
+    print("--------")
+    print("List Sum: ", userListSum)
+    print("List Product: ", userListProduct)
+    print("--------")
+
+if __name__ == "__main__":
+    main()
