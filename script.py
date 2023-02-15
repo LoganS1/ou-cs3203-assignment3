@@ -31,9 +31,11 @@ def main():
     userList = getListFromUser()
     userListSum = getSumOfList(userList)
     userListProduct = getProductOfList(userList)
+    reversedUserList = reverseList(userList)
     print("--------")
     print("List Sum: ", userListSum)
     print("List Product: ", userListProduct)
+    print("Reversed List: ", reversedUserList)
     print("--------")
 
 if __name__ == "__main__":
