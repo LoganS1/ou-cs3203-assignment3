@@ -22,6 +22,11 @@ def getListFromUser():
         userInput = input("Next integer: ")
     return userList
 
+def reverseList(list):
+    reversedList = list
+    reversedList.reverse()
+    return reversedList
+
 def main():
     userList = getListFromUser()
     userListSum = getSumOfList(userList)
